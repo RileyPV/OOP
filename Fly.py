@@ -7,4 +7,4 @@ def main():
 
     print("The length of flight is:", my_insect.flight_length())
 
-main()
+main() 
