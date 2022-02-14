@@ -1,9 +1,9 @@
 class RetailItem:
 
     def __init__(self):
-        self.__item_num
+        self.__item_num 
         
-    def set_item_description(self,des):
+    def set_item_description(self):
         self.__item_description = ["Jacket", "Designer Jeans", "Shirt"]
 
     def set_units_in_inventory(self):
