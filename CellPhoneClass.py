@@ -1,9 +1,12 @@
+from pyexpat import model
+
+
 class CellPhone:
 
-    def __init__(self):
-        self.__manufact = "Apple"
-        self.__model = "11"
-        self.__retail_price = 800
+    def __init__(self, manufacturer, model, price):
+        self.__manufact = manufacturer
+        self.__model = model
+        self.__retail_price = price
 
     def set_manufact(self,name_man):
         self.__manufact = name_man

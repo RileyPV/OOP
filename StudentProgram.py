@@ -1,22 +1,23 @@
 import StudentClass as sc
 
+import datetime
+
+
 def main():
-    my_student=sc.Student
+    my_student = sc.Student(892021116, "Riley Richards", "02/16/1996", "Sr")
 
-    date_of_birth=input("What is the student's date of birth?")
-    print("The Student is:", my_student.get_age(),"years old.")
+    #print("The Student is:", my_student.get_age(),"years old.")
 
-    classification = input("What is your classification?")
-    if classification == "Senior":
+    if my_student.classification == "Sr":
         print("11/1 thru 11/3")
         
-    if classification == "Junior":
+    if my_student.classification == "Jr":
         print("11/4 thru 11/6")
     
-    if classification == "Sophomore":
+    if my_student.classification == "S":
         print("11/7 thru 11/9")
     
-    if classification == "Freshman":
+    if my_student.classification == "F":
         print("11/10 thru 11/12")
 
 main()

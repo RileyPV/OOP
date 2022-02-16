@@ -1,8 +1,8 @@
 class Car:
 
-    def __init__(self):
-        self.__year_model = "1969"
-        self.__make = "Chevrolet"
+    def __init__(self,year,make):
+        self.__year_model = year
+        self.__make = make
         self.__speed = 0
 
     def accelerate(self):

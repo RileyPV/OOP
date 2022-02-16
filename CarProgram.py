@@ -2,7 +2,7 @@ import CarClass as c
 
 def main():
 
-    my_car = c.Car()
+    my_car = c.Car(1969, "Chevrolet")
 
     for count in range (5):
         my_car.accelerate()
