@@ -21,5 +21,5 @@ class Student:
     def get_age(self):
         return self.__age
 
-    def get_registration(self):
-        return self.__registration
+    def get_classification(self):
+        return self.__classification
