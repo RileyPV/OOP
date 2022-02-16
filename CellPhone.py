@@ -1,6 +1,7 @@
 import CellPhoneClass as cp
 
 def main():
-    manufacturer = input("What is your phone's manufacturer?")
+    my_cellphone = cp.CellPhone("Apple", 11, 900)
 
+    
 main()
