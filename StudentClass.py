@@ -1,19 +1,23 @@
 import datetime
 
+from datetime import date
+
 class Student:
 
     def __init__(self, id, name, dob, classification):
         self.__studentID = id
         self.__name = name
         self.__date_of_birth = dob
+        self.__age = 0
         self.__classification = classification
 
 
     def get_date_of_birth(self):
         return self.__date_of_birth
 
-    def age(self,year):
-        self.__age = year-2022
+    def set_age(self):
+        today = date.today()
+        self.__age = today.year - self.__date_of_birth
 
     #def registration_time(self):
        # self.__registration_time = ["Seniors" : "11/1 thru 11/3",
