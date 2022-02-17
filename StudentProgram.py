@@ -4,9 +4,14 @@ import datetime
 
 
 def main():
-    my_student = sc.Student(892021116, "Riley Richards", 10/16/1996, "Sr")
-
-    #print("The Student is:", my_student.get_age(),"years old.")
+    my_student = sc.Student(892021116, "Riley Richards", 1996, "Sr")
+    today = (datetime.date.today().year)
+    print(today)
+    year = my_student.get_date_of_birth()
+    print(year)
+    
+    
+    print("The Student is:", my_student.get_age(),"years old.")
 
     if my_student.get_classification() == "Sr":
         print("11/1 thru 11/3")

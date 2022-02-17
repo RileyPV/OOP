@@ -7,9 +7,13 @@ class Student:
         self.__name = name
         self.__date_of_birth = dob
         self.__classification = classification
-        
-    def age(self):
-        self.__age = 0
+
+
+    def get_date_of_birth(self):
+        return self.__date_of_birth
+
+    def age(self,year):
+        self.__age = year-2022
 
     #def registration_time(self):
        # self.__registration_time = ["Seniors" : "11/1 thru 11/3",
@@ -18,7 +22,8 @@ class Student:
        #                             "Freshman" : "11/10 thru 11/12"]
 
 
-    def get_age(self):
+    def get_age(self,year):
+        self.__age = year-2022
         return self.__age
 
     def get_classification(self):
